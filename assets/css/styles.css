@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+
+}
+#l1{
+   
+    animation:  fadeIn 16s;
+    
+}
+@keyframes fadeIn{
+    
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#l2{
+    animation: fadeIn 20s; 
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#l3{
+    animation: fadeIn 25s; 
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#l4{
+    animation: fadeIn 30s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#more {display: none;}
