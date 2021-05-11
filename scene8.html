@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/pacifica_condensedregular.css">
+    <link rel="stylesheet" href="assets/css/times_new_roman_cyrregular.css">
+    <link rel="stylesheet" href="assets/css/times_new_romanitalic.css">
+    <link rel="stylesheet" href="assets/css/timesbold_italic.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/TextOnVideo-1.css">
+    <link rel="stylesheet" href="assets/css/TextOnVideo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <style>
+        #panel{
+  display: none;
+}
+
+#video{
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#text{
+    animation: fadeIn 12s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+    </style>
+    <section>
+        <div>
+            <div style="background:#000;position:fixed;top:0;right:0;bottom:0;left:0;z-index:-99;">
+                <div style="position:relative;padding-bottom:0%;height:100vh;pointer-events:none;/*padding-top:25%;*/"><video style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;" width="" height="" autoplay loop><source src="assets/img/page8background.mp4" type="video/mp4"></video></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="margin-top: 50px;">
+                <div class="col" id="video"><video width="560" height="315" loop autoplay><source src="assets/img/page8.mp4" type="video/mp4"></source></video></div>
+                <div class="col">
+                    <p style="font-family:timesbold_italic; text-align: center; font-size: 30px;color: blanchedalmond;margin-top: 80px;" id="text">Wait seeker!<br> As the Oracle must<br> finish her purification ritual!<a href="#panel" onclick="myFunction()" style="text-decoration: none;color: blanchedalmond;"><i class="fa fa-chevron-circle-down" style="margin-right: 15px;" ></i></a></p>
+                </div>
+            </div>
+            <div class="row"  style="margin-top: 50px;">
+                <div class="col">
+                    <p style="font-family:timesbold_italic; text-align: center; font-size: 30px;color: blanchedalmond;margin-top: 40px;"id="panel" >She has entered the Adytron, an<br> enclosed chamber, where she<br> will enter her divine frenzy and <br> be possessed by the spirit of<br>Apollo himself<a href="oracleintro.html" style="text-decoration: none;color: blanchedalmond;"><i class="fa fa-chevron-circle-down"style="margin-right: 15px;" ></i></a></p>
+                </div>
+                <div class="col"><video width="560" height="315"  loop autoplay><source src="assets/img/page8video1.mp4" type="video/mp4"></source></video></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function myFunction() {
+          document.getElementById("panel").style.display = "block";
+          
+        }
+       
+        </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
