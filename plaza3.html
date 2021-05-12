@@ -17,54 +17,46 @@
 </head>
 
 <body>
-    
+    <style>
+        #panel{
+            display: none;
+        }
+    </style>
     <div>
         <div style="background:#000;position:fixed;top:0;right:0;bottom:0;left:0;z-index:-99;height:100vh;">
-            <div style="position:relative;padding-bottom:0%;height:100vh;pointer-events:none;/*padding-top:25%;*/"><video style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;" width="" height="" autoplay loop><source src="assets/img/PLAZA.mp4" type="video/mp4"></video></div>
+            <div style="position:relative;padding-bottom:0%;height:100vh;pointer-events:none;/*padding-top:25%;*/"><video style="position:fixed; right: 0; bottom: 0; width:auto; height:100%; min-width: 100%;  min-height: 100%;pointer-events:none;" width="" height="" autoplay loop><source src="assets/img/PLAZA.mp4" type="video/mp4"></video></div>
         </div>
     </div>
         <a class=" float-right" id="springs" style="position: relative;bottom: -50vh;top:20%;text-decoration: none;" href="scenee2.html">
-            <h1 style="font-family:timesbold_italic;color:#fff;font-size: 20px;margin-right: 50px;" >Explore the hot springs
+            <h1 style="font-family:timesbold_italic;color:#fff;font-size: 20px;margin-right: 50px; text-shadow: 2px 2px 5px rgb(82, 0, 0);" >Return to the hot springs
                 <i class="fa fa-chevron-circle-right" ></i>
             </h1>
            
         </a>
         <a class=" float-left" id="springs" style="position: relative;bottom: -50vh;top:20%;text-decoration: none;" href="scene3.html">
-            <h1 style="font-family:timesbold_italic;color:#fff;font-size: 20px;margin-left: 50px;" ><i class="fa fa-chevron-circle-left" style="margin-right: 15px;" ></i>Explore the Gymnasium
+            <h1 style="font-family:timesbold_italic;color:#fff;font-size: 20px;margin-left: 50px;text-shadow: 2px 2px 5px rgb(82, 0, 0);" ><i class="fa fa-chevron-circle-left" style="margin-right: 15px;" ></i>Explore the Gymnasium
                 
             </h1>
            
         </a>
-        <a class=" float-left" id="springs" style="position: relative;bottom: -30vh;top:20%;text-decoration: none;" href="scrollpage.html">
-            <h1 style="font-family:timesbold_italic;color:#fff;font-size: 20px;margin-left: 60vh;" ><i class="fa fa-chevron-circle-left  " style="margin-right: 15px;" ></i>Enter the Temple Of Apollo
-                
-            </h1>
-           
-        </a>
-        <div style="top:0;color:#fff;height:100vh;">
+        <p style="font-family:timesbold_italic;  position:absolute; top:50%;left:42%; font-size: 2.1vw;color:rgb(255, 255, 255); text-shadow: 2px 2px 5px rgb(82, 0, 0);" id="panel">Come, ask! but beware-<br> KNOW THYSELF! <a href="plaza4.html" style="text-decoration: none;" id="myBtn">
+            <i  class="fa fa-chevron-circle-down" style="color:white"></i></a></p>
+        <div style="top:0;height:100vh;">
             <div style="position: absolute;bottom: 25px;left: 20%;right: 20%;" >
-                <p style="font-family:timesbold_italic; text-align: center; font-size: 20px;"> At last seeker, the day has arrived!<br>
-                    The moon is in phase and the Oracle of<br> Delphi is ready to give her prophecies!<br><span id="dots"></span><span id="more">Come, ask! but beware- KNOW THYSELF!</span>
-                        <a onclick="myFunction()" id="myBtn">
-                            <i  class="fa fa-chevron-circle-down" id="btn" ></i></a></p>
+                <p style="font-family:timesbold_italic; text-align: center; font-size: 25px;color:rgb(255, 255, 255); text-shadow: 2px 2px 5px rgb(82, 0, 0);"> At last seeker, the day has arrived!<br>
+                    The moon is in phase and the Oracle of<br> Delphi is ready to give her prophecies!
+                         <a onclick="myFunction()" >  <i  class="fa fa-chevron-circle-down"  ></i></a></p>
                
             </div>
         </div>
     </div>
+    <audio preload="auto" autoplay loop><source src="assets/img/plaza 3 sound.mp3" type="audio/wav"></source></audio>
     <script>
         function myFunction() {
-          var dots = document.getElementById("dots");
-          var moreText = document.getElementById("more");
-          var btnText = document.getElementById("myBtn");
-        
-          if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            moreText.style.display = "none";
-          } else {
-            dots.style.display = "none";
-            moreText.style.display = "inline";
-          }
+          document.getElementById("panel").style.display = "block";
+          
         }
+       
         </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

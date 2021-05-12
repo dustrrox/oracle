@@ -19,21 +19,22 @@
 <body>
     <div>
         <div style="background:#000;position:fixed;top:0;right:0;bottom:0;left:0;z-index:-99;height:100vh;">
-            <div style="position:relative;padding-bottom:0%;height:100vh;pointer-events:none;/*padding-top:25%;*/"><video style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;" width="" height="" autoplay loop><source src="assets/img/SCENEE2.mp4" type="video/mp4"></video></div>
+            <div style="position:relative;padding-bottom:0%;height:100vh;pointer-events:none;/*padding-top:25%;*/"><video style="position: center; right: 0; bottom: 0; width:auto; height:100%; min-width: 100%;  min-height: 100%;pointer-events:none;" width="" height="" autoplay loop><source src="assets/img/SCENEE2.mp4" type="video/mp4"></video></div>
         </div>
         <div style="top:0;color:#fff;height:100vh;">
             <a class=" float-left" id="springs" style="position: relative;top:50vh;text-decoration: none;" href="plaza3.html">
-                <h1 style="font-family:timesbold_italic;color:#fff;font-size: 20px;margin-left: 50px; text-align: center;" ><i class="fa fa-chevron-circle-left" style="margin-right: 10px;" ></i>Return to the plaza and<br>continue exploring
+                <h1 style="font-family:timesbold_italic;color:#fff;font-size: 20px;margin-left: 50px; text-align: center; text-shadow: 2px 2px 5px rgb(82, 0, 0);" ><i class="fa fa-chevron-circle-left" style="margin-right: 10px;" ></i>Return to the plaza and<br>continue exploring
                     
                 </h1>
 
                 <a class=" float-right" onclick="myFunction()" id="myBtn" style=" position: relative;right:20vh;top:2vh;text-decoration: none;">
-                    <h1 style="text-align: center; font-family:timesbold_italic;color:#fff;font-size: 20px;margin-left: 50px;" ></i>Come, weary traveller!<br>
+                    <h1 style="text-align: center; font-family:timesbold_italic;color:#fff;font-size: 2.1em;margin-left: 50px;margin-top: 50px; text-shadow: 2px 2px 5px rgb(82, 0, 0);" ></i>Come, weary traveller!<br>
                         Soak your feet in Delphi's abundant<br>
                         hot springs! <span id="dots"></span><span id="more">Allow yourself to relax in our sweet<br> smelling waters and let the bubbles <br>massage the aches of your long journey! </span> <i class="fa fa-chevron-circle-down" style="margin-right: 10px;" ></i>
                         
                     </h1>
     </div>
+    <audio  autoplay loop><source src="assets/img/hot-springs-audio.mp3" type="audio/wav"></source></audio>
     <script>
         function myFunction() {
           var dots = document.getElementById("dots");
@@ -51,6 +52,12 @@
         </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#springs').hide().delay(5000).fadeIn(2200);
+});
+    </script>
 </body>
 
 </html>
